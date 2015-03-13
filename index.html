@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.ico">-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/ico/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/ico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/ico/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/ico/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/ico/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="assets/ico/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>HUD's Zillow Hackathon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--<link href="assets/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+
+
+<!-- *****************************************************************************************************************
+ HEADERWRAP
+ ***************************************************************************************************************** -->
+<section id="section1">
+    <div id="headerwrap"
+         style="background:none;">
+        <div class="col-sm-4 col-sm-offset-7"
+             style="background-color:rgba(0,0,0,.75);margin-top:250px;text-align:right">
+            <h1 style=";color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;">manual vs model</h1>
+
+            <h3 style="color: rgb(22, 212, 167)">what worked best</h3>
+            <!--<h5>February 6<sup>th</sup> - 8<sup>th</sup>, 2015</h5>-->
+        </div>
+        <div class="col-sm-12" style="text-align:center; color:rgb(22,212,167)">
+            <div style="margin:65px 0 0 0">
+                <a href="#slide1" class="fa fa-arrow-circle-down fa-5x"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-sm-5 col-sm-offset-2">-->
+                <!--<h3 style="color: rgb(22, 212, 167)">Help us connect Americans to affordable, safe, accessible housing and communities</h3>-->
+
+                <!--<h1 style="margin-top:200px;color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;background-color:rgba(0,0,0,.35)">HUD's Zillow Hackathon</h1>-->
+                <!--<h5>February 6<sup>th</sup> - 8<sup>th</sup>, 2015</h5>-->
+                <!--</div>-->
+                <!--<img src="assets/img/browser.png" class="img-responsive">-->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+</section>
+<!-- /headerwrap -->
+<img id="map-par" style="position:fixed;z-index:-1; top:0px" width='100%' frameBorder='0' src='assets/img/contact.jpg'>
+
+<!--<iframe id="map-par" style="position:fixed;z-index:-1; top:0px" width='100%' height='800px' frameBorder='0'-->
+<!--src='https://a.tiles.mapbox.com/v4/zwhitman.l2on037l/attribution.html?access_token=pk.eyJ1IjoiendoaXRtYW4iLCJhIjoieEZNeHdNQSJ9.mXXZjIJ2PYMZ6le-o3f90A'></iframe>-->
+<!--<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/zwhitman.l2on037l/attribution.html?access_token=pk.eyJ1IjoiendoaXRtYW4iLCJhIjoieEZNeHdNQSJ9.mXXZjIJ2PYMZ6le-o3f90A'></iframe>-->
+<!--<div style="height:300px"></div>-->
+
+<!-- *****************************************************************************************************************
+ SLIDE 1
+ ***************************************************************************************************************** -->
+<div id="contain-par" style="background-color:white;z-index: 999;">
+
+    <section id="section2">
+        <div id="slide1" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the overview</h1>
+
+                    <div class="hline"></div>
+                    <h2>
+
+                        the client
+                    </h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>
+                                PE rich telecommunications company
+                                <ul style="margin-left:25px">
+                                    <li>young</li>
+                                    <li>produces carrier-neutral cell mesh-networks</li>
+                                    <li>venue-specific operations to-date</li>
+                                </ul>
+                            </li>
+                            <li>
+                                looking to sell tech to major carriers
+                            </li>
+                        </h3>
+                    </ul>
+                    <h2>the project</h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>what MSAs have the necessary infrastructure</li>
+                                <ul style="margin-left:25px">
+                                    <li>fiber</li>
+                                    <li>traffic signals</li>
+                                    <li>street lamps</li>
+                                </ul>
+                            <li>how many assets were available for use in the mesh network</li>
+                            <li>what specific assets should they choose</li>
+                            <li>what MSAs should they ultimately pitch to the carriers</li>
+                        </h3>
+                    </ul>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide2" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 2
+     ***************************************************************************************************************** -->
+    <section id="section3">
+        <div id="slide2" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the process</h1>
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>the team</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>4 resources from S&O</li>
+                            <li>6 resources from geospatial</li>
+                        </ul>
+                    </h3>
+                    <h2>look for data</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>scour web for geospatial data</li>
+                            <li>collect findings</li>
+                            <li>validate</li>
+                            <li>present results</li>
+                        </ul>
+                    </h3>
+                    <h2>challenges</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>MSAs are enormous</li>
+                            <li>coverage is poor</li>
+                            <li>data are of varying quality</li>
+                            <li>process is very time intensive</li>
+                        </ul>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="http://mrwgifs.com/wp-content/uploads/2013/05/Mark-Wahlberg-Confused-In-The-Happening.gif">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 2
+     ***************************************************************************************************************** -->
+    <section id="section3">
+        <div id="slide2" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>an unusual request</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>the ask</h2>
+
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>where are all the traffic signals and streetlamps in the following MSAs:</li>
+                            <ul style="padding-left: 25px">
+                                <li>New York</li>
+                                <li>Los Angeles</li>
+                                <li>Chicago</li>
+                                <li>Oakland/San Francisco</li>
+                                <li>Philadelphia</li>
+                                <li>and 15 others</li>
+                            </ul>
+                        </ul>
+                    </h3>
+                    <h2>the requirements</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>provide exact locations</li>
+                            <li>at least 75% accurate</li>
+                            <li>must use one model for all MSAs</li>
+                            <li>need to begin modelling in one week</li>
+                        </ul>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="http://mrwgifs.com/wp-content/uploads/2013/05/Mark-Wahlberg-Confused-In-The-Happening.gif">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section4">
+        <div id="slide3" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the response</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/maybe_short.gif">
+                </div>
+                <div class="col-sm-6">
+                    <h2>the model</h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>
+                                generates between 200,000 to 400,000 assets per MSA
+                            </li>
+                            <li>
+                                model runtime: 35min (thanks to Zac A)
+                            </li>
+                            <li>
+                                traffic signal model
+                            </li>
+                            <ul style="margin-left:25px; font-size:.8em">
+                                <li>road class</li>
+                                <li>speed</li>
+                                <li>intersections</li>
+                            </ul>
+                            <li>
+                                streetlight model
+                            </li>
+                            <ul style="margin-left:25px; font-size:.8em">
+                                <li>road class</li>
+                                <li>streetlight spacing averages</li>
+                            </ul>
+                        </h3>
+                    </ul>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide4" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section5">
+        <div id="slide4" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>to give you a sense of context</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>this is the DC MSA</h2>
+                    <img class="img-responsive" src="assets/img/dc.jpg">
+
+                </div>
+                <div class="col-sm-6">
+                    <h2>this is an accuracy check for Minneapolis</h2>
+                    <img class="img-responsive" src="assets/img/minn.jpg">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+    <!-- *****************************************************************************************************************
+     SLIDE 4
+     ***************************************************************************************************************** -->
+    <section id="section6">
+        <div id="slide5" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the result</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>more like the success</h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>
+                                model ave accuracy: 80%
+                            </li>
+                            <ul style="margin-left:25px">
+                                <li>
+                                   high: 95%
+                                </li>
+                                <li>
+                                    low: 50%
+                                </li>
+                            </ul>
+                            <li>
+                                cities passed: 20
+                            </li>
+                            <li>
+                                cities failed: 1 (Boston)
+                            </li>
+                        </h3>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/ballet.gif">
+                    <!--<img class="img-responsive" style="border:solid rgb(22, 212, 167); margin:70px auto 0 auto" src="assets/img/minn.jpg">-->
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide5" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 5
+     ***************************************************************************************************************** -->
+    <section id="section7">
+        <div id="slide6" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>The common threads</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-12" style="margin-top:50px">
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">1</i>
+                    </span>
+
+                        <h3>manage expectations</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">2</i>
+                    </span>
+
+                        <h3>boil things down</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">3</i>
+                    </span>
+
+                        <h3>start simply</h3>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
+                    <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x" style="color:white">4</i>
+                    </span>
+
+                        <h3>iterate</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#footerwrap" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     FOOTER
+     ***************************************************************************************************************** -->
+    <section id="section8">
+        <div id="footerwrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12" style="text-align:center">
+                        <h1>questions?</h1>
+                        <br/>
+
+                        <!--<div class="hline-w"></div>-->
+                        <!--<p>The U.S. Department of Housing and Urban Development's (HUD's) Office of Policy Development and-->
+                        <!--Research (PD&R) supports the Department's efforts to help create cohesive, economically healthy-->
+                        <!--communities.</p>-->
+
+                        <div class="hline-w"></div>
+                        <p>
+                            zach whitman<br/>
+                            zwhitman@deloitte.com<br/>
+                            geospatial practice<br/>
+                        </p>
+                    </div>
+                    <div class="col-sm-12" style="text-align: center;margin:75px 0">
+                        <h3>a big thanks to the *mercury* team</h3>
+                        <h4>(in name length order)</h4>
+
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <!--<h4>the *mercury* team</h4>-->
+
+                            <p>Brian Hutchinson</p>
+
+                            <p>Zac Anderack</p>
+
+                            <p>Amit Shivpuja</p>
+
+                            <p>James Parker</p>
+
+                            <p>Sara Flecher</p>
+
+                            <p>Evan Jones</p>
+
+                            <p>Julie Lam</p>
+
+                        </div>
+                        <!--<div class="col-sm-3">-->
+                            <!--<h4>the census team</h4>-->
+
+                            <!--<p>Steven Johnson</p>-->
+
+                            <!--<p>Sara Flecher</p>-->
+
+                            <!--<p>Julie Lam</p>-->
+                        <!--</div>-->
+                    </div>
+
+                </div>
+                <! --/row -->
+            </div>
+            <! --/container -->
+        </div>
+        <! --/footerwrap -->
+    </section>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/retina-1.1.0.js"></script>
+<script src="assets/js/jquery.hoverdir.js"></script>
+<script src="assets/js/jquery.hoverex.min.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.isotope.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<script>
+    // Portfolio
+    (function ($) {
+        "use strict";
+        var $container = $('.portfolio'),
+                $items = $container.find('.portfolio-item'),
+                portfolioLayout = 'fitRows';
+
+        if ($container.hasClass('portfolio-centered')) {
+            portfolioLayout = 'masonry';
+        }
+
+        $container.isotope({
+            filter: '*',
+            animationEngine: 'best-available',
+            layoutMode: portfolioLayout,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            },
+            masonry: {}
+        }, refreshWaypoints());
+
+        function refreshWaypoints() {
+            setTimeout(function () {
+            }, 1000);
+        }
+
+        $('nav.portfolio-filter ul a').on('click', function () {
+            var selector = $(this).attr('data-filter');
+            $container.isotope({filter: selector}, refreshWaypoints());
+            $('nav.portfolio-filter ul a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+
+        function getColumnNumber() {
+            var winWidth = $(window).width(),
+                    columnNumber = 1;
+
+            if (winWidth > 1200) {
+                columnNumber = 5;
+            } else if (winWidth > 950) {
+                columnNumber = 4;
+            } else if (winWidth > 600) {
+                columnNumber = 3;
+            } else if (winWidth > 400) {
+                columnNumber = 2;
+            } else if (winWidth > 250) {
+                columnNumber = 1;
+            }
+            return columnNumber;
+        }
+
+        function setColumns() {
+            var winWidth = $(window).width(),
+                    columnNumber = getColumnNumber(),
+                    itemWidth = Math.floor(winWidth / columnNumber);
+
+            $container.find('.portfolio-item').each(function () {
+                $(this).css({
+                    width: itemWidth + 'px'
+                });
+            });
+        }
+
+        function setPortfolio() {
+            setColumns();
+            $container.isotope('reLayout');
+        }
+
+        $container.imagesLoaded(function () {
+            setPortfolio();
+        });
+
+        $(window).on('resize', function () {
+            setPortfolio();
+        });
+    })(jQuery);
+</script>
+<script>
+    $(window).bind('scroll', function (e) {
+        parallaxScroll();
+    });
+
+    function parallaxScroll() {
+        var scrolled = $(window).scrollTop();
+        $('#map-par').css('top', (0 - (scrolled * .25)) + 'px');
+        $('#contain-par').css('top', (0 - (scrolled * .75)) + 'px');
+    }
+</script>
+<script>
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 50
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+<script>
+    function scrollToAnchor(aid) {
+        $('html,body').animate({
+            scrollTop: aid.offset().top
+        }, 'slow');
+
+    }
+
+    var i = 1;
+    $(document).keydown(function (event) {
+
+        if (event.keyCode == 38) {
+            i--;
+            scrollToAnchor($("#section" + i + ""));
+        } else if (event.keyCode == 40) {
+            i++;
+            event.preventDefault();
+            scrollToAnchor($("#section" + i + ""));
+        }
+    });
+
+</script>
+</body>
+</html>
