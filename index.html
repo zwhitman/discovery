@@ -61,9 +61,9 @@
          style="background:none;">
         <div class="col-sm-4 col-sm-offset-7"
              style="background-color:rgba(0,0,0,.75);margin-top:250px;text-align:right">
-            <h1 style=";color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;">manual vs model</h1>
+            <h1 style=";color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;">a world of data</h1>
 
-            <h3 style="color: rgb(22, 212, 167)">what worked best</h3>
+            <h3 style="color: rgb(22, 212, 167)">be it published or modelled</h3>
             <!--<h5>February 6<sup>th</sup> - 8<sup>th</sup>, 2015</h5>-->
         </div>
         <div class="col-sm-12" style="text-align:center; color:rgb(22,212,167)">
@@ -161,7 +161,7 @@
                     <h1>the process</h1>
                     <div class="hline"></div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <h2>the team</h2>
                     <h3>
                         <ul style="padding-left: 25px">
@@ -215,27 +215,30 @@
                     <div class="hline"></div>
                 </div>
                 <div class="col-sm-6">
-                    <h2>the client needed more</h2>
+                    <h2>the client needed more assets</h2>
                     <h3>
                         <ul style="padding-left: 25px">
-                            <li>we needed a model that predicted where are all the traffic signals and streetlamps in the following MSAs:</li>
+                            <li>complete coverage for</li>
                             <ul style="padding-left: 25px">
                                 <li>New York</li>
                                 <li>Los Angeles</li>
                                 <li>Chicago</li>
                                 <li>Oakland/San Francisco</li>
                                 <li>Philadelphia</li>
-                                <li>and 15 others</li>
+                                <li>and over 15 others (the list has grown)</li>
                             </ul>
+                            <li>and they needed one MSA every 2 days</li>
                         </ul>
                     </h3>
-                    <h2>the client's requirements</h2>
+                    <h2>so we proposed to model the assets</h2>
                     <h3>
                         <ul style="padding-left: 25px">
-                            <li>provide exact locations</li>
-                            <li>at least 75% accurate</li>
-                            <li>must use one model for all MSAs</li>
-                            <li>need one MSA every 2 days</li>
+                            <li>the client stipulated that the model must</li>
+                            <ul style="padding-left: 25px">
+                                <li>provide exact locations</li>
+                                <li>be at least 75% accurate</li>
+                                <li>use one model for all MSAs</li>
+                            </ul>
                         </ul>
                     </h3>
                 </div>
@@ -266,9 +269,6 @@
                     <div class="hline"></div>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-responsive" style="margin:70px auto 0 auto" src="">
-                </div>
-                <div class="col-sm-6">
                     <h2>the model</h2>
                     <ul style="padding-left: 25px">
                         <h3>
@@ -276,7 +276,7 @@
                                 generates between 200,000 to 400,000 assets per MSA
                             </li>
                             <li>
-                                model runtime: 35min (thanks to Zac A)
+                                model runtime: 35min
                             </li>
                             <li>
                                 traffic signal model
@@ -284,7 +284,7 @@
                             <ul style="margin-left:25px; font-size:.8em">
                                 <li>road class</li>
                                 <li>speed</li>
-                                <li>intersections</li>
+                                <li>intersections</li>/li>
                             </ul>
                             <li>
                                 streetlight model
@@ -295,6 +295,31 @@
                             </ul>
                         </h3>
                     </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h2>the results</h2>
+                    <ul style="padding-left: 25px">
+                        <h3>
+                            <li>
+                                model ave accuracy: 80%
+                            </li>
+                            <ul style="margin-left:25px">
+                                <li>
+                                    high: 95%
+                                </li>
+                                <li>
+                                    low: 50%
+                                </li>
+                            </ul>
+                            <li>
+                                cities passed: 24
+                            </li>
+                            <li>
+                                cities failed: 1 (Boston)
+                            </li>
+                        </h3>
+                    </ul>
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="">
                 </div>
                 <div class="col-sm-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -344,30 +369,30 @@
         <div id="slide5" class="container mtb" style="margin-top:30px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>the result</h1>
+                    <h1>our setup</h1>
 
                     <div class="hline"></div>
                 </div>
                 <div class="col-sm-6">
-                    <h2>more like the success</h2>
+                    <h2>the it environment</h2>
                     <ul style="padding-left: 25px">
                         <h3>
                             <li>
-                                model ave accuracy: 80%
+                                2 servers
                             </li>
                             <ul style="margin-left:25px">
                                 <li>
-                                   high: 95%
+                                   one for model processing
                                 </li>
                                 <li>
-                                    low: 50%
+                                    the other for MDM
                                 </li>
                             </ul>
                             <li>
-                                cities passed: 20
+                                exposed data through a web map
                             </li>
                             <li>
-                                cities failed: 1 (Boston)
+                                created a mobile app to ingest/edit data in the field
                             </li>
                         </h3>
                     </ul>
@@ -389,13 +414,76 @@
     </section>
 
     <!-- *****************************************************************************************************************
+     SLIDE 4
+     ***************************************************************************************************************** -->
+    <section id="section6">
+        <div id="slide5" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the mobile app</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/collector_0.png">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/collector_1.png">
+                    <!--<img class="img-responsive" style="border:solid rgb(22, 212, 167); margin:70px auto 0 auto" src="assets/img/minn.jpg">-->
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/collector_2.png">
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/collector_4.png">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide5" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 4
+     ***************************************************************************************************************** -->
+    <section id="section6">
+        <div id="slide5" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>the web app</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-12">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/pole_collector_app.PNG">
+                </div>
+                <div class="col-sm-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide5" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+
+    </section>
+
+
+    <!-- *****************************************************************************************************************
      SLIDE 5
      ***************************************************************************************************************** -->
     <section id="section7">
         <div id="slide6" class="container mtb" style="margin-top:30px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>The common threads</h1>
+                    <h1>the capabilities</h1>
 
                     <div class="hline"></div>
                 </div>
@@ -406,7 +494,7 @@
                         <i class="fa fa-stack-1x" style="color:white">1</i>
                     </span>
 
-                        <h3>manage expectations</h3>
+                        <h3>collect open assets</h3>
                     </div>
                     <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
                     <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
@@ -414,7 +502,7 @@
                         <i class="fa fa-stack-1x" style="color:white">2</i>
                     </span>
 
-                        <h3>boil things down</h3>
+                        <h3>model assets</h3>
                     </div>
                     <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
                     <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
@@ -422,7 +510,7 @@
                         <i class="fa fa-stack-1x" style="color:white">3</i>
                     </span>
 
-                        <h3>start simply</h3>
+                        <h3>manage data</h3>
                     </div>
                     <div class="col-sm-4 col-sm-offset-4 well" style="text-align:center;border:solid rgb(22, 212, 167)">
                     <span class="fa-stack fa-lg" style="position:absolute;left:-18px; top:-18px">
@@ -430,7 +518,7 @@
                         <i class="fa fa-stack-1x" style="color:white">4</i>
                     </span>
 
-                        <h3>iterate</h3>
+                        <h3>build mobile/web apps</h3>
                     </div>
                 </div>
                 <div class="col-sm-12" style="text-align:center">
@@ -449,10 +537,14 @@
      FOOTER
      ***************************************************************************************************************** -->
     <section id="section8">
-        <div id="footerwrap">
+        <div id="footerwrap" style="height:800px">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12" style="text-align:center">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <h1>questions?</h1>
                         <br/>
 
@@ -468,28 +560,28 @@
                             geospatial practice<br/>
                         </p>
                     </div>
-                    <div class="col-sm-12" style="text-align: center;margin:75px 0">
-                        <h3>a big thanks to the *mercury* team</h3>
-                        <h4>(in name length order)</h4>
+                    <!--<div class="col-sm-12" style="text-align: center;margin:75px 0">-->
+                        <!--<h3>a big thanks to the *mercury* team</h3>-->
+                        <!--<h4>(in name length order)</h4>-->
 
-                        <div class="col-sm-4 col-sm-offset-4">
-                            <!--<h4>the *mercury* team</h4>-->
+                        <!--<div class="col-sm-4 col-sm-offset-4">-->
+                            <!--&lt;!&ndash;<h4>the *mercury* team</h4>&ndash;&gt;-->
 
-                            <p>Brian Hutchinson</p>
+                            <!--<p>Brian Hutchison</p>-->
 
-                            <p>Zac Anderack</p>
+                            <!--<p>Zac Anderack</p>-->
 
-                            <p>Amit Shivpuja</p>
+                            <!--<p>Amit Shivpuja</p>-->
 
-                            <p>James Parker</p>
+                            <!--<p>James Parker</p>-->
 
-                            <p>Sara Flecher</p>
+                            <!--<p>Sara Flecher</p>-->
 
-                            <p>Evan Jones</p>
+                            <!--<p>Evan Jones</p>-->
 
-                            <p>Julie Lam</p>
+                            <!--<p>Julie Lam</p>-->
 
-                        </div>
+                        <!--</div>-->
                         <!--<div class="col-sm-3">-->
                             <!--<h4>the census team</h4>-->
 
